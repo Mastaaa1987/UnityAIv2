@@ -1,6 +1,5 @@
-# 
-# Deutsch:
-# 
+# Englisch Version:
+
 
 # UnityAI V2
 
@@ -373,9 +372,9 @@ The goal is for UnityAI V2 to not only write code but also autonomously execute 
 
 This project is under active development. API structures and internal components are subject to change between versions.
 
-# 
-# Deutsch:
-# 
+
+# Deutsch Fassung:
+
 
 # UnityAI V2
 
