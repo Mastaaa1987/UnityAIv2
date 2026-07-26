@@ -1,6 +1,7 @@
+# 
+# Deutsch:
+# 
 
-<details>
-<summary>English: Click HERE</summary>
 # UnityAI V2
 
 > **An autonomous AI development agent for Unity**
@@ -372,10 +373,10 @@ The goal is for UnityAI V2 to not only write code but also autonomously execute 
 
 This project is under active development. API structures and internal components are subject to change between versions.
 
-</details>
+# 
+# Deutsch:
+# 
 
-<details>
-<summary>Deutsch: Klicke HIER</summary>
 # UnityAI V2
 
 > **An autonomous AI development agent for Unity**
@@ -750,4 +751,3 @@ Dadurch soll UnityAI V2 nicht nur Code schreiben, sondern komplette Entwicklungs
 
 Dieses Projekt befindet sich aktiv in der Entwicklung. API-Strukturen und interne Komponenten können sich zwischen Versionen ändern.
 
-</details>
