@@ -6,6 +6,7 @@
 > **An autonomous AI development agent for Unity**
 
 UnityAI V2 is an AI-powered development agent for the Unity Editor. The system combines code generation, automated repair, Unity Editor automation, runtime validation, and structured development planning into a fully orchestrated workflow.
+The entire process is powered by an LLM of your choice—ranging from Mistral.ai and OpenAI to fully locally hosted models like Qwen 3.5 or DeepSeek, served via Ollama or LM Studio. Everything from creating a development plan to generating C# code via a patch cycle can be handled locally, eliminating the additional costs associated with cloud-based AI services.
 
 ---
 
@@ -381,6 +382,7 @@ This project is under active development. API structures and internal components
 > **An autonomous AI development agent for Unity**
 
 UnityAI V2 ist ein KI-gestützter Entwicklungsagent für den Unity Editor. Das System kombiniert Codegenerierung, automatisierte Reparatur, Unity-Editor-Automatisierung, Runtime-Validierung und strukturierte Entwicklungsplanung zu einem vollständig orchestrierten Workflow.
+Der gesamte Prozess wird von einem LLM meiner Wahl angetrieben – von Mistral.ai über OpenAI bis hin zu vollständig lokal gehosteten Modellen wie Qwen 3.5 oder DeepSeek, bereitgestellt über Ollama oder LM Studio. Sämtliche Schritte, von der Erstellung eines Entwicklungsplans bis zur Generierung von C#-Code im Rahmen eines Patch-Zyklus, können lokal ausgeführt werden, wodurch zusätzliche Kosten für cloudbasierte KI-Dienste entfallen.
 
 ---
 
