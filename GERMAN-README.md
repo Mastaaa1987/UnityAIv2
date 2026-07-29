@@ -1,5 +1,53 @@
 # Deutsch Fassung:
 
+# Pre Prompt
+
+Man glaubt es kaum Ich habe heute in den Selben Prompt über dem Ich einen Planungsauftrag an meine LLM übergebe eingegeben:
+
+```
+Rigge das vorhandene Modell
+Assets/UnityAI/Generated/Models/MeinModel.glb
+mit Blender als Generic-Rig.
+
+Erzeuge eine loopende Idle-Animation namens Idle und speichere das
+riggte Modell als
+Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx.
+
+Importiere das FBX anschließend in Unity, konfiguriere es als Generic Rig,
+analysiere das Skeleton, erstelle In-Place- und Root-Motion-Clips,
+validiere die Animation und erzeuge einen Animator Controller unter
+Assets/UnityAI/Generated/Animations/MeinModel.controller.
+
+Erstelle abschließend ein Prefab unter
+Assets/UnityAI/Generated/Prefabs/MeinModel.prefab.
+```
+
+Und die LLM hat mir diesen Plan entworfen:
+
+```
+- Erstellt den vertraglichen Rahmen für das Rigging: Generic-Rig, Name 'MeinModel', Höhe standardmäßig 1.7m, Animation 'Idle' als loopende Animation.
+- GeneratePrefab=true für spätere Prefab-Erstellung.
+- Nutzt Blender, um das bestehende GLB-Modell (Assets/UnityAI/Generated/Models/MeinModel.glb) als Generic-Rig zu riggen und eine loopende Idle-Animation zu erstellen.
+- Ausgabe als FBX unter Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx.
+- Importiert das geriggte FBX (Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx) in Unity und konfiguriert es als Generic Rig. Importiert Animationen.
+- Analysiert das Skeleton des importierten Modells, erstellt In-Place- und Root-Motion-Clips für die Idle-Animation und validiert die Animation.
+- Erstellt einen Animator Controller mit der Idle-Animation (In-Place-Variante) als Standard-State unter Assets/UnityAI/Generated/Animations/MeinModel.controller.
+- Erstellt ein Prefab aus dem importierten, riggten Modell mit dem Animator Controller unter Assets/UnityAI/Generated/Prefabs/MeinModel.prefab.
+```
+
+Und er hat den Plan erfolgreich ausgeführt! 
+
+Das glb Model habe Ich zuvor mit ComfyUI in einer Prompt to Image to 3D Model in 30 min generieren lassen. die LLM hat mir jetzt daraus eine fxb MOdel mit Rig 
+
+Bones & Idle Animation gemacht und das ganze nur mit den möglichen Tools die ich hier über UnityAIv2 freigegeben habe xD !!!
+
+UnityAI ist nun in der Lage ganze Kampfsysteme zu schreiben, Models zu erstellen, zu Animieren, zu importieren. Das ganze im Game modus auf Komplie fehler zu 
+
+untersuchen und zu korrigieren! Und das beste dabei ist das die LLM komplett austauschbar ist, ob nun ChatGPT, OpenAI, oder lokale quen3.5 modelle (oder deepseek 
+
+usw.) via Ollama oder LM Studio, spielt keine rolle die LLM braucht nicht zu wissen wie Unity, Blender, oder ComfyUI funktioniert ! 
+
+Viel zu kross ganz ehrlich!
 
 # UnityAI V2
 
