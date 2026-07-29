@@ -1,3 +1,52 @@
+# Pre Prompt
+
+It’s hard to believe—today I entered the following prompt to pass a planning task to my LLM:
+
+```
+Rig the existing model
+Assets/UnityAI/Generated/Models/MeinModel.glb
+using Blender as a Generic Rig.
+
+Create a looping idle animation named 'Idle' and save the
+rigged model as
+Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx.
+
+Then, import the FBX into Unity, configure it as a Generic Rig,
+analyze the skeleton, create in-place and root-motion clips,
+validate the animation, and generate an Animator Controller at
+Assets/UnityAI/Generated/Animations/MeinModel.controller.
+
+Finally, create a prefab at
+Assets/UnityAI/Generated/Prefabs/MeinModel.prefab.
+```
+
+And the LLM devised this plan for me:
+
+```
+- Establishes the specifications for rigging: Generic Rig, name 'MeinModel', default height 1.7m, 'Idle' animation as a looping animation.
+- GeneratePrefab=true for subsequent prefab creation.
+- Uses Blender to rig the existing GLB model (Assets/UnityAI/Generated/Models/MeinModel.glb) as a Generic Rig and create a looping idle animation.
+- Outputs as FBX at Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx.
+- Imports the rigged FBX (Assets/UnityAI/Generated/Models/MeinModel_Rigged.fbx) into Unity and configures it as a Generic Rig. Imports animations.
+- Analyzes the imported model's skeleton, creates in-place and root-motion clips for the idle animation, and validates the animation.
+- Creates an Animator Controller with the idle animation (in-place variant) as the default state at Assets/UnityAI/Generated/Animations/MeinModel.controller.
+``` - Creates a prefab from the imported, rigged model with the Animator Controller at `Assets/UnityAI/Generated/Prefabs/MeinModel.prefab`.
+```
+
+And it successfully executed the plan!
+
+I previously used ComfyUI to generate the GLB model—going from prompt to image to 3D model—in just 30 minutes. The LLM then turned that into an FBX model with a rig,
+
+bones, and an idle animation—and it did all of this using only the tools I enabled here via UnityAIv2 xD!!!
+
+UnityAI is now capable of writing entire combat systems, as well as creating, animating, and importing models. It can even check for and fix compilation errors while in Play Mode!
+
+And the best part is that the LLM is completely interchangeable—whether it's ChatGPT, OpenAI, or local Qwen 3.5 models (or DeepSeek, etc.) via Ollama or LM Studio,
+
+it doesn't matter; the LLM doesn't need to know how Unity, Blender, or ComfyUI actually work!
+
+Honestly, it's just mind-blowing!
+
 # UnityAI V2
 
 For German Readme look at GERMAN-README.md ...
